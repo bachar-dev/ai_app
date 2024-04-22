@@ -26,6 +26,7 @@ class _SignInViewState extends State<SignInView> {
       body: SafeArea(
         child: Center(
           child: Stack(
+            alignment: Alignment.center,
             children: [
               Lottie.asset(
                 height: size.height,
@@ -51,7 +52,7 @@ class _SignInViewState extends State<SignInView> {
                           child: TextField(
                             controller: _emailController,
                             decoration: const InputDecoration(
-                                hintText: "enter your password",
+                                hintText: "enter your email",
                                 border: OutlineInputBorder()),
                           )),
                       const SizedBox(
@@ -63,7 +64,7 @@ class _SignInViewState extends State<SignInView> {
                         child: TextField(
                           controller: _passwordController,
                           decoration: const InputDecoration(
-                              hintText: "enter your email",
+                              hintText: "enter your password",
                               border: OutlineInputBorder()),
                         ),
                       ),
